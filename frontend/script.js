@@ -70,7 +70,7 @@ async function generateFutureMe(event) {
     loadingEl.style.display = 'block';
 
     try {
-        const response = await fetch('/api/generate-futureme', {
+        const response = await fetch('https://futureme-api.onrender.com/api/generate-futureme', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
